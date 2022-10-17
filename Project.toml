@@ -1,3 +1,8 @@
+name = "AutoExperimentationTools"
+uuid = "2826ba67-f5a5-4788-bce4-e1886f6182df"
+authors = ["amartin <alberto.martin@monash.edu>"]
+version = "0.1.0"
+
 [deps]
 Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
