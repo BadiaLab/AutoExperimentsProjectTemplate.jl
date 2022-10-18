@@ -1,0 +1,13 @@
+name = "AutoExperimentsProjectTemplate"
+uuid = "64611b47-5e82-4d5c-b061-50c51953356a"
+authors = ["Santiago Badia <santiago.badia@monash.edu>", "Alberto F. Martin <alberto.martin@monash.edu>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.8"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
