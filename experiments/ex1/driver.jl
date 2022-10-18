@@ -1,5 +1,4 @@
 module Driver
-  using DrWatson
   # Add here whichever modules/packages your
   # driver function may need
 
