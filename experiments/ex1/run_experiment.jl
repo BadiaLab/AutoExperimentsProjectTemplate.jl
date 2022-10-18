@@ -14,7 +14,7 @@ using AutoExperimentsProjectTemplate
 # You have to eliminate them from the data folder if you wish
 # them to be re-run
 function generate_param_dicts()
-   params = Dict(
+   params = Dict{Symbol,Any}(
      :m      => collect(0:0.5:1),  #
      :a      => collect(0:0.5:1),  #
      :b      => collect(0:0.5:1),  #
@@ -38,9 +38,11 @@ function run_experiment(params)
   @unpack m, a, b, p = params
   dict = Driver.driver(m,a,b,p)
   merge!(dict,params)
-  # add current git commit to dict
-  # and then save
-  tagsave(outfile,replace_strings_by_symbols(dict))
+  # @tagsave: add current git commit to dict and then save.
+  # "replace_strings_by_symbols" is required to ensure that
+  # the dictionary is not of type Dict{Any} but of type
+  # Dict{Symbol}
+  @tagsave(outfile,replace_strings_by_symbols(dict))
   println(" (done)")
 end
 

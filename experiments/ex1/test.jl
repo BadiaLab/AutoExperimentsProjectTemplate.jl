@@ -6,5 +6,5 @@ using DrWatson
 @quickactivate "AutoExperimentsProjectTemplate"
 
 using DataFrames
-df = collect_results(datadir("ex1"))
+df = collect_results(datadir("ex1"),black_list=[:script],verbose=true)
 println(df)
