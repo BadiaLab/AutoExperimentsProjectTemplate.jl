@@ -31,7 +31,7 @@ Pluto notebook.
 
 Step 1. leverages `DrWatson.jl` tools and rationale. See [here](https://juliadynamics.github.io/DrWatson.jl/dev/workflow/) for more details, while step 2. leverages the `Pluto.jl` and `PlutoUI.jl`  projects. See [here](https://github.com/fonsp/Pluto.jl/wiki) for more details. 
 Some familiarity with the documentation in these two links is highly recommended, specially 
-when developing the scripts and files for a new repository.
+when developing the scripts for a new experiment.
 
 ## How to run experiments 
 
