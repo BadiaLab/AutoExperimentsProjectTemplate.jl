@@ -1,0 +1,5 @@
+Put sliders for a,b,m and a box for p (0 or 1)
+Show the plots a vs f(m,a,b,p) for fixed choice of m,b,p (sliders/box)
+Show the plots b vs f(m,a,b,p) for fixed choice of m,a,p (sliders/box)
+Show the plots m vs f(m,a,b,p) for fixed choice of a,b,p (sliders/box)
+(always accessing the already run results)
