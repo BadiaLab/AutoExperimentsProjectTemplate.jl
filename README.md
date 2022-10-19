@@ -49,14 +49,19 @@ of the project, in particular in a subfolder with the same name of the experimen
 
 ## How to run pluto notebook 
 
-Go to the root folder of the project and run (e.g., for  mini-example `ex1`): 
+Go to the root folder of the project and run the following command:
 
 ```
 julia --project=.
+``` 
 
-julia> import Pluto 
-julia> Pluto.run(notebook=notebooks/ex1.jl) 
+Then, in the Julia REPL, run (e.g., for `ex1`)
+
+```julia
+import Pluto 
+Pluto.run(notebook=notebooks/ex1.jl) 
 ```
 
 this will trigger a web browser navigator with the contents of the notebook.
+
 
