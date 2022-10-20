@@ -15,9 +15,9 @@ using AutoExperimentsProjectTemplate
 # them to be re-run
 function generate_param_dicts()
    params = Dict{Symbol,Any}(
-     :m      => collect(0:0.5:1),  #
-     :a      => collect(0:0.5:1),  #
-     :b      => collect(0:0.5:1),  #
+     :m      => collect(0:0.2:1),  #
+     :a      => collect(0:0.2:1),  #
+     :b      => collect(0:0.2:1),  #
      :p      => [false,true],      #
    )
    dict_list(params)
