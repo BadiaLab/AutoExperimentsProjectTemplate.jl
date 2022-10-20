@@ -60,3 +60,8 @@ julia> Pluto.run(notebook=notebooks/ex1.jl)
 
 this will trigger a web browser navigator with the contents of the notebook.
 
+## Warnings, lessons learned 
+
+When dealing with `DrWatson.jl`, it is a must (at least in the current version at the moment of writing, i.e., `v2.11.1`) that 
+the `Dict`s that are written to data files are such that the `typeof` the key is not abstract, e.g., `Any`. In other words, the key has to be of a concrete type, e.g., `Symbol`. Otherwise, when importing the dictionary from data files (typically in a Pluto notebooks) a cryptic/confusing error message is generated on screen. 
+
