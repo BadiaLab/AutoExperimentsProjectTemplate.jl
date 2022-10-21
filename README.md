@@ -59,7 +59,7 @@ Then, in the Julia REPL, run (e.g., for `ex1`)
 
 ```julia
 import Pluto 
-Pluto.run(notebook=notebooks/ex1.jl) 
+Pluto.run(notebook="notebooks/ex1.jl") 
 ```
 
 this will trigger a web browser navigator with the contents of the notebook.
