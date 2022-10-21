@@ -35,6 +35,12 @@ when developing the scripts for a new experiment.
 
 ## How to run experiments 
 
+### Option 1 (best suited if you want to run the experiments from the terminal)
+
+**IMPORTANT NOTE**: This option requires `DrWatson.jl` to be installed in the main julia 
+environment, e.g., `v1.7` if you have Julia 1.7. Please install it in the 
+main julia environment before following the instructions in the sequel.
+
 Go to the folder in which the scripts of the experiment at hand are located, e.g., 
 `cd experiments/ex1` and run the `julia` script `run_experiment.jl` as 
 
@@ -46,6 +52,20 @@ Note that the `--project=XXX` is not required in the call to the `julia` command
 The script is smart enough  in order to locate the `Project.toml` of the project in an ancestor directory. Upon completion, the results are generated in the `data` directory 
 of the project, in particular in a subfolder with the same name of the experiments, e.g.,
 `data/ex1`.
+
+### Option 2 (best suited if you want to run the experiments interactively)
+
+Go to the root folder of the repo and run from the terminal: 
+
+```bash 
+julia --project=. 
+```
+
+Then, in the Julia REPL, run: 
+
+```julia
+include("experiments/ex1/run_experiments.jl")
+```
 
 ## How to run pluto notebook 
 
