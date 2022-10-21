@@ -92,7 +92,7 @@ the `Dict`s that are written to data files are such that the `typeof` the key is
 
 ## TODOs
 
-* In the `DrWatson.jl` scripts, I am using the `@gitsave` macro in order to 
+* In the `DrWatson.jl` scripts, I am using the `@tagsave` macro in order to 
 record inside the data file the git commit ID of the project at which the results 
 were generated. However, the data file name does not include the commit ID.
 As a result, we cannot re-run the experiments for a different commit without removing
