@@ -37,9 +37,9 @@ when developing the scripts for a new experiment.
 
 ### Option 1 (best suited if you want to run the experiments from the terminal)
 
-**IMPORTANT NOTE**: This option requires `DrWatson.jl` to be installed in the main julia 
+**IMPORTANT NOTE**: *This option requires `DrWatson.jl` to be installed in the main julia 
 environment, e.g., `v1.7` if you have Julia 1.7. Please install it in the 
-main julia environment before following the instructions in the sequel. See [here](https://juliadynamics.github.io/DrWatson.jl/dev/project/#Activating-a-Project-1), option 4 (`@quickactivate` macro), for more details.
+main julia environment before following the instructions in the sequel. See [here](https://juliadynamics.github.io/DrWatson.jl/dev/project/#Activating-a-Project-1), option 4 (`@quickactivate` macro), for more details.*
 
 
 Go to the folder in which the scripts of the experiment at hand are located, e.g., 
