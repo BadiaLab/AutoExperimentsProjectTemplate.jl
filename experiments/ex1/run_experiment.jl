@@ -29,7 +29,7 @@ end
 include("driver.jl")
 
 function run_experiment(params)
-  outfile = datadir("ex1", savename("ex1",params,"bson"))
+  outfile = datadir("ex1", gitdescribe(), savename("ex1",params,"bson"))
   if isfile(outfile)
     println("$outfile (done already)")
     return nothing
