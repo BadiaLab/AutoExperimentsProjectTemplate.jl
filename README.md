@@ -98,6 +98,6 @@ Thus, if we want to explore different values for this `Array`-type parameter you
 * (Optionally) Split evenly the experiments triggered in `experiments/ex1` into job scripts so that 
   we can exploit HPC node parallelism.  
   
-* Use DrWatson's `produce_or_load`.
+* Use DrWatson's `produce_or_load` function in the `run_experiments.jl` script, possibly adding a command-line argument, say, `--force-repeat`, that let us control the `force=` kw-arg of the `produce_or_load` function. 
 
 
