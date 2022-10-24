@@ -103,9 +103,7 @@ we provide aslo the `commit_ID` for which we want to visualize the results.
 
 * (Optionally) Split evenly the experiments triggered in `experiments/ex1` into job scripts so that 
   we can exploit HPC node parallelism.  
-
-
-
-
+  
+* Use DrWatson's `produce_or_load`.
 
 
