@@ -87,8 +87,11 @@ this will trigger a web browser navigator with the contents of the notebook.
 
 ## Warnings, lessons learned 
 
-When dealing with `DrWatson.jl`, it is a must (at least in the current version at the moment of writing, i.e., `v2.11.1`) that 
+* When dealing with `DrWatson.jl`, it is a must (at least in the current version at the moment of writing, i.e., `v2.11.1`) that 
 the `Dict`s that are written to data files are such that the `typeof` the key is not abstract, e.g., `Any`. In other words, the key has to be of a concrete type, e.g., `Symbol`. Otherwise, when importing the dictionary from data files (typically in a Pluto notebooks) a cryptic/confusing error message is generated on screen.
+
+* When a given parameter in a `Dict` of parameter-value combinations is of type `Array` (I would say that for any iterable object, although did not check), then `DrWatson.jl` (actually the `savename` function) does not add it to the name of data file where it stores the contents of the dictionary (see [here](https://juliadynamics.github.io/DrWatson.jl/dev/workflow/#.-Run-and-save-1) for more details.) 
+Thus, if we want to explore different values for this `Array`-type parameter you have to generate the name of the file yourself to avoid clashes. 
 
 ## TODOs
 
